@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-black">
@@ -13,41 +15,32 @@ export default function Hero() {
           </span>
 
           <h1 className="mt-8 text-7xl font-black leading-tight text-white">
-
             Mint
-
-            <span className="text-lime-400">
-
-              {" "}PAWC
-
-            </span>
-
+            <span className="text-lime-400"> PAWC</span>
             <br />
-
             Without Limits
-
           </h1>
 
           <p className="mt-8 text-xl leading-9 text-zinc-400">
-
             Robinhood PAWC is the easiest way to mint,
             track and explore inscriptions on Robinhood Chain.
-
           </p>
 
           <div className="mt-10 flex gap-4">
 
-            <button className="rounded-xl bg-lime-400 px-8 py-4 font-bold text-black">
-
+            <Link
+              href="/mint"
+              className="rounded-xl bg-lime-400 px-8 py-4 font-bold text-black transition-all duration-300 hover:scale-105 hover:bg-lime-300"
+            >
               Start Minting
+            </Link>
 
-            </button>
-
-            <button className="rounded-xl border border-zinc-700 px-8 py-4 text-white">
-
+            <Link
+              href="/explorer"
+              className="rounded-xl border border-zinc-700 px-8 py-4 text-white transition-all duration-300 hover:border-lime-400 hover:text-lime-400"
+            >
               Explorer
-
-            </button>
+            </Link>
 
           </div>
 
