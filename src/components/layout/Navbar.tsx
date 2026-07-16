@@ -25,8 +25,8 @@ export default function Navbar() {
           <Image
   src="/logo.png"
   alt="Robinhood PAWC"
-  width={56}
-  height={56}
+  width={48}
+  height={48}
   priority
   className="rounded-xl object-contain"
 />
