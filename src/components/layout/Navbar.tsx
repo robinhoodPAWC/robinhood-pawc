@@ -6,6 +6,8 @@ import WalletButton from "../wallet/WalletButton";
 
 import useAdmin from "@/hooks/useAdmin";
 
+import Image from "next/image";
+
 export default function Navbar() {
   const { isOwner } = useAdmin();
 
@@ -20,9 +22,14 @@ export default function Navbar() {
           href="/"
           className="flex items-center gap-3"
         >
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-lime-400 text-xl font-black text-black">
-            P
-          </div>
+          <Image
+  src="/logo.png"
+  alt="Robinhood PAWC"
+  width={56}
+  height={56}
+  priority
+  className="rounded-xl object-contain"
+/>
 
           <div>
 
